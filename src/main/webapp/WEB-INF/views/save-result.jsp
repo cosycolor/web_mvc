@@ -5,9 +5,9 @@
 </head>
 <body> 성공
 <ul>
-  <li>id=${memberOk.id}</li>
-  <li>username=${memberOk.username}</li>
-  <li>age=${memberOk.age}</li>
+  <li>id=${member.id}</li>
+  <li>username=${member.username}</li>
+  <li>age=${member.age}</li>
 </ul>
 <a href="/index.html">메인</a>
 </body>
