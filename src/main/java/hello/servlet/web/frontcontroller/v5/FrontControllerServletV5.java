@@ -49,8 +49,7 @@ public class FrontControllerServletV5 extends HttpServlet {
     protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         Object handler = getHandler(request);
         if(handler == null){
-            /*response.setStatus(HttpServletResponse.SC_NOT_FOUND);*/
-            response.getWriter().write("eh");
+            response.setStatus(HttpServletResponse.SC_NOT_FOUND);
             return;
         }
         MyHandlerAdapter adapter = getHandlerAdapter(handler);
